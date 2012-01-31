@@ -1,0 +1,19 @@
+#coding: utf-8
+========================
+
+Aulas 1, 2, 3 e 4: sem notas
+
+========================
+
+Aula 5 (2012-01-31)
+
+xxd - Aplicativo Unix para ver os bytes de um arquivo
+
+codecs - modulo Python que codifica e decodica pra você
+
+Unicode: representa através de codepoints
+UTF-8: Uma maneira de codificar codepoints para bytes (encode)
+
+
+
+=========================
