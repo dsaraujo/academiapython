@@ -14,6 +14,13 @@ codecs - modulo Python que codifica e decodica pra você
 Unicode: representa através de codepoints
 UTF-8: Uma maneira de codificar codepoints para bytes (encode)
 
+Vimos alguns tipos diferentes de IDEs / editores
 
+Orientação à objetos e frameworks
+
+* self não é reservado, é só convenção
+* __repr__ -> Usado para uso interno numa conversão pra String
+* __str__ -> Conversão pra String, similar a .toString() do Java
+* Variaveis definidas numa classe são variáveis "estáticas"
 
 =========================
