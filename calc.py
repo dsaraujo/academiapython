@@ -1,5 +1,5 @@
 # coding: utf-8
-# Simulates an extensible calculator (now using OO)
+# Simulates an extensible calculator (now using O.O.)
 __author__ = 'Daniel Araujo'
 
 import operator as op
@@ -15,7 +15,7 @@ class Calculator(object):
     }
     
     def __init__(self):
-        self.ops = Calculator.standard_ops
+        self.ops = Calculator.standard_ops.copy()   # Copy from class
         self.currentop = self.ops['+']
         self.total = 0
     
@@ -42,7 +42,8 @@ class Calculator(object):
         self.ops[key] = func
     
     def getOp(self):
-        """Return the string of the current operation, empty string if not found"""
+        """Return the string of the current operation, 
+        empty string if not found"""
         for k in self.ops.keys():
             if self.ops[k] is self.currentop:
 				return k

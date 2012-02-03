@@ -1,15 +1,15 @@
 #coding: utf-8
 ========================
 
-Aulas 1, 2, 3 e 4: sem notas
+Aulas 1, 2, 3: sem notas
 
 ========================
 
-Aula 5 (2012-01-31)
+Aula 4 (2012-01-31)
 
 xxd - Aplicativo Unix para ver os bytes de um arquivo
 
-codecs - modulo Python que codifica e decodica pra você
+codecs - modulo Python que codifica e decodifica pra você
 
 Unicode: representa através de codepoints
 UTF-8: Uma maneira de codificar codepoints para bytes (encode)
@@ -24,3 +24,17 @@ Orientação à objetos e frameworks
 * Variaveis definidas numa classe são variáveis "estáticas"
 
 =========================
+
+Aula 5 (2012-02-02)
+
+* Falamos das discussões da lista (humano, calculadora)
+* @property, @classmethod e outros decorators (não detalhados ainda)
+* global pode ser usada para referenciar uma variável do contexto externo
+* Vimos o Relogio do Tkinter com OO
+* Para ter herança múltipla: class(pai1, pai2, pai3) C:
+* A ordem das super classes é relevante para a resolução dos métodos: o Python
+  tenta buscar primeiro métodos em pai1, depois pai2, etc.
+* Fizemos um mini dojo com uma calculadora pós-fixa
+
+* Camiseta Python: 
+  http://www.linuxmall.com.br/produto/camiseta-python-preta-.html
