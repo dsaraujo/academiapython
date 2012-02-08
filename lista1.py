@@ -1,4 +1,5 @@
 # encoding: utf-8
+# This file is written in pt_BR
 
 """Lista de exercícios: listcomps
 
@@ -81,7 +82,7 @@ def exercicio3(lista):
     
 def exercicio4(m, h):
     l = zip(m, h)
-    return {i:j for (i,j) in l}
+    return {i:j for (i,j) in l}            # Requer Python 2.7 ou 3.1+
     
 def exercicio5(m, h):
     return [(i,j) for i in m for j in h]

@@ -38,3 +38,15 @@ Aula 5 (2012-02-02)
 
 * Camiseta Python: 
   http://www.linuxmall.com.br/produto/camiseta-python-preta-.html
+
+==========================
+
+Aula 6 (2012-02-07)
+
+* Todo atributo de classe deve ser imutável. Ou feita uma cópia na inicialização
+* Não use um parametro default mutável: ele será sempre associado ao objeto
+  função. Se precisar, uma técnica é usar o default None, e testar por isso
+  para inicializar um novo objeto.
+* Você pode proteger o acesso acidental a um atributo usando __ (dunder) antes 
+  de uma variável. Isso porque uma variavel da Classe __x vira _Classe__x 
+  internamente, protegendo de uma efentual sobrescrita.
