@@ -50,3 +50,9 @@ Aula 6 (2012-02-07)
 * Você pode proteger o acesso acidental a um atributo usando __ (dunder) antes 
   de uma variável. Isso porque uma variavel da Classe __x vira _Classe__x 
   internamente, protegendo de uma efentual sobrescrita.
+  
+=========================
+
+Aula 7 (2012-02-09)
+
+* 

@@ -22,20 +22,20 @@ class StandardCard(object):
         
 """
 Represents a Card from the game Super Trunfo::
-    
-    >>> s = SuperTrunfoCard('Ferrari', 10, {'velocidade':20})
-    >>> s
-    <Trunfo:Ferrari,(10, {'velocidade': 20})>
 
 """        
-class SuperTrunfoCard(object):
+class SuperTrunfoCard(StandardCard):
 
-    def __init__(self, name, *attr):
+    def __init__(self, name, value, suit, chars=None):
+        StandardCard.__init__(self, value, suit)
         self.name = name
-        self.attr = attr
+        if chars is None:
+            self.chars = {}
+        else:
+            self.chars = chars
 
     def __repr__(self):
-        return '<Trunfo:%s,%s>' % (self.name, self.attr)
+        return '<Trunfo:%s,%s%s>' % (self.name, self.value, self.suit)
     
         
 """Represents a complete (generic) deck, a collection of Cards (any item)"""        
@@ -119,10 +119,40 @@ class StandardDeck(Deck):
                    for v in self.suit
                    for s in self.values]
         self.append(cards)
+        
 
+class SuperTrunfoDeck(Deck):
+    """Represents a sample (SuperTrunfo) deck::
+    """
+
+    values = [str(i) for i in range(1,9)]
+    suit = 'A B C D'.split()
+
+    def __init__(self):
+        Deck.__init__(self)
+        cards = [SuperTrunfoCard('Carta '+s+v,s, v)
+                   for v in self.suit
+                   for s in self.values]
+        Deck.append(self, cards)
+        chars = {
+            'speed':0,
+            'mph':0,
+            'year':1990,
+            'gears':0
+        }
+        for carta in self:
+            carta.chars = chars
+            if carta.value == '1' and carta.suit == 'A':
+                carta.name = 'Fusca'
+                carta.chars['speed'] = 90
+                carta.chars['mph'] = 120
+                carta.chars['year'] = 1922
+                carta.chars['gears'] = 4
+        Deck.append(self, SuperTrunfoCard('SuperTrunfo', '0', '0'))
 
 if __name__ == '__main__':
     import doctest
     doctest.testmod()    
     d = Deck()
     s = StandardDeck()
+    t = SuperTrunfoDeck()
