@@ -1,30 +1,31 @@
+Notas de Aula da Academia Python
+================================
 
 Aula 1, 2, 3
-============
+------------
 
 * sem notas, mal aí.
 
 Aula 4 (2012-01-31)
-===================
+-------------------
 
-* xxd - Aplicativo Unix para ver os bytes de um arquivo
-* codecs - modulo Python que codifica e decodifica pra você
-* Unicode: representa através de codepoints
-* UTF-8: Uma maneira de codificar codepoints para bytes (encode)
+* *xxd* - Aplicativo Unix para ver os bytes de um arquivo
+* *codecs* - modulo Python que codifica e decodifica pra você
+    * Unicode: representa através de codepoints
+    * UTF-8: Uma maneira de codificar codepoints para bytes (encode)
 * Vimos alguns tipos diferentes de IDEs / editores
 * Falamos de orientação à objetos e frameworks
 * self não é palavra reservada, é só uma convenção (tão comum que editores de
   texto reconhecem com frequência
 * __repr__ -> Usado para uso interno numa conversão pra String
-* __str__ -> Conversão pra String, similar a .toString() do Java
-* Variaveis definidas numa classe são variáveis "estáticas" (not really, mas
-  serve como definição geral)
+* __str__ -> Conversão pra String, similar a *.toString()* do Java
+* Variaveis definidas numa classe são variáveis "estáticas" [1]_
 
 Aula 5 (2012-02-02)
-===================
+-------------------
 
 * Falamos das discussões da lista (humano, calculadora)
-* @property, @classmethod e outros decorators (não detalhados ainda)
+* **@property**, **@classmethod** e outros decorators (não detalhados ainda)
 * global pode ser usada para referenciar uma variável do contexto externo
 * Vimos o Relogio do Tkinter com OO
 * Para ter herança múltipla: class(pai1, pai2, pai3) C:
@@ -36,19 +37,21 @@ Aula 5 (2012-02-02)
   http://www.linuxmall.com.br/produto/camiseta-python-preta-.html
 
 Aula 6 (2012-02-07)
-===================
+-------------------
 
 * Todo atributo de classe deve ser imutável. Ou feita uma cópia na inicialização
 * Não use um parametro default mutável: ele será sempre associado ao objeto
-  função. Se precisar, uma técnica é usar o default None, e testar por isso
+  função. Se precisar, uma técnica é usar o default *None*, e testar por isso
   para inicializar um novo objeto.
 * Você pode proteger o acesso acidental a um atributo usando __ (dunder) antes 
   de uma variável. Isso porque uma variavel da Classe __x vira _Classe__x 
-  internamente, protegendo de uma efentual sobrescrita.
+  internamente, protegendo de uma eventual sobrescrita.
 
 Aula 7 (2012-02-09)  
-===================
+-------------------
 
 * Corrigimos as listas 1 e 2.
 * Falamos (muito) sobre iteráveis, iteradores, geradores e afins
-* 
+* Slides de NoSQL / Isis
+
+.. [1] (not really, mas serve como definição geral)
