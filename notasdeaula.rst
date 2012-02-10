@@ -1,31 +1,27 @@
-#coding: utf-8
-========================
 
-Aulas 1, 2, 3: sem notas
+Aula 1, 2, 3
+============
 
-========================
+* sem notas, mal aí.
 
 Aula 4 (2012-01-31)
+===================
 
-xxd - Aplicativo Unix para ver os bytes de um arquivo
-
-codecs - modulo Python que codifica e decodifica pra você
-
-Unicode: representa através de codepoints
-UTF-8: Uma maneira de codificar codepoints para bytes (encode)
-
-Vimos alguns tipos diferentes de IDEs / editores
-
-Orientação à objetos e frameworks
-
-* self não é reservado, é só convenção
+* xxd - Aplicativo Unix para ver os bytes de um arquivo
+* codecs - modulo Python que codifica e decodifica pra você
+* Unicode: representa através de codepoints
+* UTF-8: Uma maneira de codificar codepoints para bytes (encode)
+* Vimos alguns tipos diferentes de IDEs / editores
+* Falamos de orientação à objetos e frameworks
+* self não é palavra reservada, é só uma convenção (tão comum que editores de
+  texto reconhecem com frequência
 * __repr__ -> Usado para uso interno numa conversão pra String
 * __str__ -> Conversão pra String, similar a .toString() do Java
-* Variaveis definidas numa classe são variáveis "estáticas"
-
-=========================
+* Variaveis definidas numa classe são variáveis "estáticas" (not really, mas
+  serve como definição geral)
 
 Aula 5 (2012-02-02)
+===================
 
 * Falamos das discussões da lista (humano, calculadora)
 * @property, @classmethod e outros decorators (não detalhados ainda)
@@ -39,9 +35,8 @@ Aula 5 (2012-02-02)
 * Camiseta Python: 
   http://www.linuxmall.com.br/produto/camiseta-python-preta-.html
 
-==========================
-
 Aula 6 (2012-02-07)
+===================
 
 * Todo atributo de classe deve ser imutável. Ou feita uma cópia na inicialização
 * Não use um parametro default mutável: ele será sempre associado ao objeto
@@ -50,9 +45,10 @@ Aula 6 (2012-02-07)
 * Você pode proteger o acesso acidental a um atributo usando __ (dunder) antes 
   de uma variável. Isso porque uma variavel da Classe __x vira _Classe__x 
   internamente, protegendo de uma efentual sobrescrita.
-  
-=========================
 
-Aula 7 (2012-02-09)
+Aula 7 (2012-02-09)  
+===================
 
+* Corrigimos as listas 1 e 2.
+* Falamos (muito) sobre iteráveis, iteradores, geradores e afins
 * 
