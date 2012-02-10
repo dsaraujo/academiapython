@@ -60,9 +60,9 @@ Vamos retornar 12 pares, 3x4.
    nomes com menos de 4 letras das duas listas. Quantos casais serão formados?
 
     >>> exercicio6(mulheres, homens)
-    [('Ana', 'Tom')]
+    [('Mariana', 'Pedro'), ('Mariana', 'Juca'), ('Mariana', 'Joaquim'), ('Paula', 'Pedro'), ('Paula', 'Juca'), ('Paula', 'Joaquim')]
     >>> len(exercicio6(mulheres, homens))
-    1
+    6
     
 Só existe um casal onde ambos tem nomes com menos de 4 letras.
     
@@ -78,7 +78,7 @@ def exercicio2(lista):
     return [(i[0], i) for i in lista]
     
 def exercicio3(lista):
-    return {i:j for (i,j) in lista}
+    return {i:j for (i,j) in lista}        # Requer Python 2.7 ou 3.1+
     
 def exercicio4(m, h):
     l = zip(m, h)
@@ -88,6 +88,7 @@ def exercicio5(m, h):
     return [(i,j) for i in m for j in h]
     
 def exercicio6(m, h):
-    return [(i,j) for i in m if len(i) < 4 for j in h if len(j) < 4]
+    return [(i,j) for i in m if len(i) >= 4  # Corrigido, queremos remover 
+                  for j in h if len(j) >= 4] # quem tem 3- letras no nome.
     
 

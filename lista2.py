@@ -33,9 +33,9 @@ na expressão geradora acima?
 
 """
 3. Para verificar se o conjunto fox_letters realmente contém todas as letras do
-alfabeto, podemos verificar se este conjunto é igual ao conjunto das letras ASCII
-maíusculas que o Python conhece. Para fazer esta verificação, o que devemos escrever
-no lugar de «1», e que resposta aparecerá em «2»?
+alfabeto, podemos verificar se este conjunto é igual ao conjunto das letras 
+ASCII maíusculas que o Python conhece. Para fazer esta verificação, o que 
+devemos escrever no lugar de «1», e que resposta aparecerá em «2»?
 
 >>> import string
 >>> letters = set(string.ascii_uppercase)
@@ -44,16 +44,16 @@ no lugar de «1», e que resposta aparecerá em «2»?
 
 Pode simples como fox_letters == letters, voltando True.
 
-Outra maneira seria fox_letters.difference(letters) voltar vazio set([]), ou seja, não
-existem items que estão em fox_letters mas não estão em letters.
+Outra maneira seria fox_letters.difference(letters) voltar vazio set([]), ou 
+seja, não existem items que estão em fox_letters mas não estão em letters.
 
 """
 
 """
 4. O alfabeto português antigamente era menor que o inglês, mas hoje é igual
-(tirando o cedilha). A frase abaixo aparece como exemplo de pangrama na Wikipédia
-em português, vamos verificar usando a mesma técnica usada acima, substituindo
-«1», «2» e «3» pelas expressões apropriadas:
+(tirando o cedilha). A frase abaixo aparece como exemplo de pangrama na 
+Wikipédia em português, vamos verificar usando a mesma técnica usada acima, 
+substituindo «1», «2» e «3» pelas expressões apropriadas:
 
 >>> jabuti = 'Um pequeno jabuti xereta viu dez cegonhas felizes.'
 >>> jabuti_letras = set(«1» for l in «2» if «3»)
@@ -64,8 +64,8 @@ usamos em «1» e qual a resposta aparecerá em «2»:
 >>> letters «1» jabuti_letras
 set(«2»)
 
-operador de menos -, com o resultado set(['Y', 'K', 'W']). Representa os itens de
-letters exceto os itens de jabuti_letras
+operador de menos -, com o resultado set(['Y', 'K', 'W']). Representa os itens 
+de letters exceto os itens de jabuti_letras
 
 """
 
@@ -76,9 +76,6 @@ de «1», e neste exemplo ambos produziriam o mesmo resultado em «2». Quais s�
 operadores, e qual a diferença entre eles?
 
 ^ retorna o mesmo resultado, mas volta itens que são unicos de cada set
-^= muda letters para conter somente os itens unicos
 
-
-Outra possibilidade é set.difference(letters, jabuti_letters), mas isso é igual ao -
 
 """

@@ -9,8 +9,8 @@ Aula 1, 2, 3
 Aula 4 (2012-01-31)
 -------------------
 
-* *xxd* - Aplicativo Unix para ver os bytes de um arquivo
-* *codecs* - modulo Python que codifica e decodifica pra você
+* *xxd*: Aplicativo Unix para ver os bytes de um arquivo
+* codecs: modulo Python que codifica e decodifica pra você
     * Unicode: representa através de codepoints
     * UTF-8: Uma maneira de codificar codepoints para bytes (encode)
 * Vimos alguns tipos diferentes de IDEs / editores
@@ -20,6 +20,8 @@ Aula 4 (2012-01-31)
 * __repr__ -> Usado para uso interno numa conversão pra String
 * __str__ -> Conversão pra String, similar a *.toString()* do Java
 * Variaveis definidas numa classe são variáveis "estáticas" [1]_
+
+.. [1] (not really, mas serve como definição geral)
 
 Aula 5 (2012-02-02)
 -------------------
@@ -54,4 +56,4 @@ Aula 7 (2012-02-09)
 * Falamos (muito) sobre iteráveis, iteradores, geradores e afins
 * Slides de NoSQL / Isis
 
-.. [1] (not really, mas serve como definição geral)
+
