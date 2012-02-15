@@ -73,4 +73,4 @@ Aula 8 (2012-02-14)
 * Descriptors
 ** guardamos os tipos basicos, mas com setters e getters para os campos
 ** Depois de muito Django, fizemos um exemplo de itens de um pedido
-
+** Uso de @property

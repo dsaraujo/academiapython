@@ -14,13 +14,32 @@ Generic Doc Tests
     ValueError: amt must be one or higher
     >>> i.amt
     2
-    >>> i.total()
+    >>> i2.total()
     3.98
 
 """
 
+class Ammount(object):
+
+    def __init__(self, attr):
+        self.attr = attr        
+
+    def __get__(self, obj, obj_type=None):
+        """Ammount of items in the Order"""
+        return getattr(obj, self.attr)
+
+    def __set__(self, obj, value):
+        if value < 1:
+            raise ValueError("amt must be one or higher")
+        else:
+            setattr(obj, self.attr, value)
+
+
 """Class that defines an Item of a Order"""
 class ItemOrder(object):
+
+    amt = Ammount('__amt')
+    per_box = Ammount('__per_box')
     
     def __init__(self, cod, amt, price, per_box=1):
         """Creates a new Item from an Order.
@@ -28,6 +47,7 @@ class ItemOrder(object):
         cod - Code of the item
         amt - Ammount of items
         price - Price of the item
+        per_box - How many items fill a full box
 
         >>> i = ItemOrder('ABC123', 1, 0.99)        
 
@@ -36,18 +56,6 @@ class ItemOrder(object):
         self.__amt = amt
         self.__price = price
         self.__per_box = per_box
-
-    @property
-    def amt(self):
-        """Ammount of items in the Order"""
-        return self.__amt
-
-    @amt.setter
-    def amt(self, value):
-        if value < 1:
-            raise ValueError("amt must be one or higher")
-        else:
-            self.__amt = value
 
     def total(self):
         """Gets the total of items times price"""
