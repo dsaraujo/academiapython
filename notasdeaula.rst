@@ -56,4 +56,21 @@ Aula 7 (2012-02-09)
 * Falamos (muito) sobre iteráveis, iteradores, geradores e afins
 * Slides de NoSQL / Isis
 
+Aula 8 (2012-02-14)
+-------------------
+
+* Meta programação
+* Django
+** virtualenv --no-site-packages django1.3
+** cd django1.3/bin
+** . activate
+** cd ..
+** pip install django
+** django-admin startproject project
+** cd project
+** chmod +x manage.py
+** manage.py runserver
+* Descriptors
+** guardamos os tipos basicos, mas com setters e getters para os campos
+** Depois de muito Django, fizemos um exemplo de itens de um pedido
 
