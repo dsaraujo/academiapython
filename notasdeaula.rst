@@ -86,7 +86,7 @@ Aula 9 (2012-02-16)
 * Tutorial Traduzido em http://turing.com.br/pydoc/2.7
 * Falamos de módulos, pacotes, dir(), os.path, __init__.py
 * O repr() deveria ser capaz de avaliar o resultado e reconstruir o objeto
-(mas nem sempre é assim, pode atrapalhar mais que ajudar)
+  (mas nem sempre é assim, pode atrapalhar mais que ajudar)
 * Falamos de *var, **kwvar
 * Falamos de I/O de arquivos
 * Uso de codecs.open() e io.open()
