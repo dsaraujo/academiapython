@@ -62,15 +62,15 @@ Aula 8 (2012-02-14)
 * Meta programação
 * Django
 
-    virtualenv --no-site-packages django1.3
-    cd django1.3/bin
-    . activate
-    cd ..
-    pip install django
-    django-admin startproject project
-    cd project
-    chmod +x manage.py
-    manage.py runserver
+    1. virtualenv --no-site-packages django1.3
+    2. cd django1.3/bin
+    3. . activate
+    4. cd ..
+    5. pip install django
+    6. django-admin startproject project
+    7. cd project
+    8. chmod +x manage.py
+    9. manage.py runserver
     
 * Descriptors
     * guardamos os tipos basicos, mas com setters e getters para os campos
