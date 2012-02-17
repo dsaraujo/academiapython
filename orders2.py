@@ -37,10 +37,7 @@ class Ammount(object):
 
 """Class that defines an Item of a Order"""
 class ItemOrder(object):
-
-    amt = Ammount('__amt')
-    per_box = Ammount('__per_box')
-    
+   
     def __init__(self, cod, amt, price, per_box=1):
         """Creates a new Item from an Order.
 
@@ -52,14 +49,18 @@ class ItemOrder(object):
         >>> i = ItemOrder('ABC123', 1, 0.99)        
 
         """        
-        self.__cod = cod
-        self.__amt = amt
-        self.__price = price
-        self.__per_box = per_box
+        self._cod = cod
+        self._amt = amt
+        self._price = price
+        self._per_box = per_box
+        
+    amt = Ammount('_amt')
+    per_box = Ammount('_per_box')
+
 
     def total(self):
         """Gets the total of items times price"""
-        return self.__amt * self.__price
+        return self._amt * self._price
     
 if __name__ == '__main__':
     i = ItemOrder('ABC123', 1, 0.99)

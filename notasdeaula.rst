@@ -61,16 +61,35 @@ Aula 8 (2012-02-14)
 
 * Meta programação
 * Django
-** virtualenv --no-site-packages django1.3
-** cd django1.3/bin
-** . activate
-** cd ..
-** pip install django
-** django-admin startproject project
-** cd project
-** chmod +x manage.py
-** manage.py runserver
+
+    virtualenv --no-site-packages django1.3
+    cd django1.3/bin
+    . activate
+    cd ..
+    pip install django
+    django-admin startproject project
+    cd project
+    chmod +x manage.py
+    manage.py runserver
+    
 * Descriptors
-** guardamos os tipos basicos, mas com setters e getters para os campos
-** Depois de muito Django, fizemos um exemplo de itens de um pedido
-** Uso de @property
+    * guardamos os tipos basicos, mas com setters e getters para os campos
+    * Depois de muito Django, fizemos um exemplo de itens de um pedido
+    * Uso de @property
+    
+Aula 9 (2012-02-16)
+-------------------
+
+* http://turing.com.br/material/ppqsp
+* Mais um pouco de metaprogramação
+* **Lembrete**: tudo isso de metaprogramação requer *new style* classes.
+* Tutorial Traduzido em http://turing.com.br/pydoc/2.7
+* Falamos de módulos, pacotes, dir(), os.path, __init__.py
+* O repr() deveria ser capaz de avaliar o resultado e reconstruir o objeto
+(mas nem sempre é assim, pode atrapalhar mais que ajudar)
+* Falamos de *var, **kwvar
+* Falamos de I/O de arquivos
+* Uso de codecs.open() e io.open()
+* módulo **pickle**
+
+
