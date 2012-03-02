@@ -102,4 +102,5 @@ Aula 10 (2012-03-01) - Aula bônus
 * Mais um pouco do Tutorial Python
 * Expressões regulares
 * http://pythonregex.com/
-* 
+* Representações de floats
+* Outros exemplos (Bolsa)
