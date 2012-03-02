@@ -93,12 +93,33 @@ class Deck(object):
         """Shuffle the deck of cards, modifying the list."""
         from random import shuffle
         shuffle(self.__cards)
+        
+class RandomDeckIterator(object):
+
+    def __init__(self, deck):
+        from random import shuffle
+        self.__deck = deck
+        self.__pos = 0
+        e = range(len(deck))
+        shuffle(e)
+        self.__order = e
+        
+    def next(self):
+        c = self.__deck._Deck__cards[self.__order[self.__pos]]
+        self.__pos += 1
+        if self.__pos > len(self.__deck):
+            raise StopIteration()
+        return c
+        
+    def __iter__(self):
+        return self
+    
+    __next__ = next # For Python 3.0+
 
 class BasicDeckIterator(object):
 
     def __init__(self, deck):
         self.__deck = deck
-        self.__pos = 0
         
     def next(self):
         return (c for c in self.__deck._Deck__cards)
@@ -221,3 +242,4 @@ if __name__ == '__main__':
     doctest.testmod()    
     d = Deck()
     s = StandardDeck()
+    r = RandomDeckIterator(s)

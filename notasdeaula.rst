@@ -92,4 +92,14 @@ Aula 9 (2012-02-16)
 * Uso de codecs.open() e io.open()
 * módulo **pickle**
 
+Aula 10 (2012-03-01) - Aula bônus
+---------------------------------
 
+* O pessoal contou de suas experiências com Python até então;
+* Falamos de piramid ( http://docs.pylonsproject.org/projects/pyramid/en/1.3-branch/index.html )
+* Mais metaprogramação
+* Falamos de lxml (para criação de arquivos XML)
+* Mais um pouco do Tutorial Python
+* Expressões regulares
+* http://pythonregex.com/
+* 
