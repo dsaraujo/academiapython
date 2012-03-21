@@ -104,3 +104,41 @@ Aula 10 (2012-03-01) - Aula bônus
 * http://pythonregex.com/
 * Representações de floats
 * Outros exemplos (Bolsa)
+
+Modulo III
+==========
+
+Aula 11 (2012-03-20)
+--------------------
+
+* Django!
+* Fazendo o setup do ambiente (ver Aula 8)
+
+# virtualenv --no-site-packages envname
+# source envname/bin/activate
+
+* Use deactivate para sair do ambiente
+
+# pip install django
+
+* Podemos testar com:
+
+>>> import django
+
+# git init . 
+# django-admin.py startproject pizzaria
+# chmod +x manage.py
+# ./manage.py runserver
+
+Validating models...
+
+0 errors found
+Django version 1.3.1, using settings 'pizzaria.settings'
+Development server is running at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+
+# ./manage startapp orders
+# 
+
+* Documentação: https://docs.djangoproject.com/en/1.3/
+
