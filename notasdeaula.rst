@@ -130,15 +130,20 @@ Aula 11 (2012-03-20)
 # chmod +x manage.py
 # ./manage.py runserver
 
-Validating models...
+ Validating models...
 
-0 errors found
-Django version 1.3.1, using settings 'pizzaria.settings'
-Development server is running at http://127.0.0.1:8000/
-Quit the server with CONTROL-C.
+ 0 errors found
+ Django version 1.3.1, using settings 'pizzaria.settings'
+ Development server is running at http://127.0.0.1:8000/
+ Quit the server with CONTROL-C.
 
 # ./manage startapp orders
-# 
 
 * Documentação: https://docs.djangoproject.com/en/1.3/
 
+Aula 12 (2012-03-22)
+--------------------
+
+* https://github.com/acpy/modulo3
+* Conceitos de Django
+* 
