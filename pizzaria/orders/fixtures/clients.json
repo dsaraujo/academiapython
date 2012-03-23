@@ -1,0 +1,29 @@
+[
+  {
+    "pk": 1, 
+    "model": "orders.client", 
+    "fields": {
+      "phone": "0800 121 3133", 
+      "name": "Anand", 
+      "email": ""
+    }
+  }, 
+  {
+    "pk": 2, 
+    "model": "orders.client", 
+    "fields": {
+      "phone": "(11)23234454", 
+      "name": "Gervasio", 
+      "email": "ger@gmail.com"
+    }
+  }, 
+  {
+    "pk": 3, 
+    "model": "orders.client", 
+    "fields": {
+      "phone": "777-3211", 
+      "name": "Monica", 
+      "email": ""
+    }
+  }
+]

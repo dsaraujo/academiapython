@@ -146,4 +146,13 @@ Aula 12 (2012-03-22)
 
 * https://github.com/acpy/modulo3
 * Conceitos de Django
+* ./manage.py inspectdb -> mostra o banco em formato de models.py
+* ./manage.py sqlall app -> mostra o SQL para criar o banco atual
+* ./manage.py dumpdata app --indent=2
+
+* Mini aula de Git
+
+* Fixtures
+* DICA = tupla de um ('item',)
+* Tipos de Fields para Models
 * 
