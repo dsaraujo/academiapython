@@ -156,3 +156,20 @@ Aula 12 (2012-03-22)
 * DICA = tupla de um ('item',)
 * Tipos de Fields para Models
 * 
+
+Aula 13 (2012-03-27)
+--------------------
+
+* Update para Django1.4
+** Estrutura do Projeto mudou (mas não muito)
+** Migramos para um env novo
+** git mv pizzaria pizzaria0
+
+* geramos dados iniciais
+* Customizamos o Admin
+* Criamos outros modelos
+
+* Setting (use TZ=False) para o uso de Time Zone genérico
+
+
+
