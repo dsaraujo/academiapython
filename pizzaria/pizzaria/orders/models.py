@@ -3,6 +3,8 @@ from django.db import models
 
 # Create your models here.
 
+import num2eng
+
 class Client(models.Model):
     name = models.CharField(max_length=128)
     phone = models.CharField(u'telephone number',max_length=16, db_index=True)
@@ -15,9 +17,13 @@ class Client(models.Model):
     
     class Meta:
         unique_together = ('phone', 'ext')
+        ordering = ['phone', 'ext']
     
     def __unicode__(self):
-        return self.name
+        p = self.phone
+        if self.ext:
+            p += ' ex %s' % self.ext
+        return u'%s - %s' % (p, self.name)
     
     def full_address(self):
         return u'%s, %s' % (self.address, self.number)
@@ -33,7 +39,8 @@ class Order(models.Model):
     leave_time = models.TimeField(null=True, blank=True)
 
     def __unicode__(self):
-        return u'Order of %s' % (self.client)
+        c = len(self.pizza_set.all())
+        return u'%s pizza%s to %s @ %s' % (num2eng.num2eng(c), 's' if c > 1 else '', self.client, self.create_date.strftime('%H:%M'))
 
 class Delivery(models.Model):
     name = models.CharField(max_length=128)
@@ -43,3 +50,27 @@ class Delivery(models.Model):
     
     def __unicode__(self):
         return self.name
+
+FLAVORS = [
+    ('cheese', 'Cheese'),
+    ('pepperoni', 'Pepperoni'),
+    ('pepperoni', 'Pepperoni'),
+    ('margherita', 'Margherita'),
+    ('tuscani', 'Tuscani'),
+    ('roastbeef', 'Roast Beef'),
+]
+        
+class Pizza(models.Model):
+    pedido = models.ForeignKey(Order)
+    flavor1 = models.CharField(u'flavor', max_length=32, choices=FLAVORS)
+    flavor2 = models.CharField(u'flavor 2', max_length=32, choices=FLAVORS, blank=True)
+    notes = models.TextField(blank=True)
+    
+    def __unicode__(self):
+        f = u'Full %s' % self.flavor1
+        if self.flavor2:
+            f = u'½ %s ½ %s' % (self.flavor1, self.flavor2)
+        return f
+        
+        
+

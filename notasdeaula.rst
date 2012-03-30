@@ -171,5 +171,13 @@ Aula 13 (2012-03-27)
 
 * Setting (use TZ=False) para o uso de Time Zone genérico
 
+Aula 14 (2012-03-29)
+--------------------
 
-
+* Descobri https://www.alwaysdata.com/ -> Host com Django 1.4 gratuito
+* Fazer deployment em Apache é trampo!
+* OneToOneField(Model) para relações 1:1
+* ManyToMany para relações n:m, com tabela intermediária
+* Inline in Admin
+* sphinx
+* Mais opções de Admin
