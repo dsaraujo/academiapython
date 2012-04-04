@@ -37,6 +37,8 @@ class Order(models.Model):
     delivery = models.ForeignKey('Delivery', null=True, 
                                   blank=True, verbose_name='delivery guy')
     leave_time = models.TimeField(null=True, blank=True)
+    
+    list_select_related = True # Do JOINs and less queries to this admin
 
     def __unicode__(self):
         c = len(self.pizza_set.all())
@@ -54,14 +56,13 @@ class Delivery(models.Model):
 FLAVORS = [
     ('cheese', 'Cheese'),
     ('pepperoni', 'Pepperoni'),
-    ('pepperoni', 'Pepperoni'),
     ('margherita', 'Margherita'),
     ('tuscani', 'Tuscani'),
     ('roastbeef', 'Roast Beef'),
 ]
         
 class Pizza(models.Model):
-    pedido = models.ForeignKey(Order)
+    order = models.ForeignKey(Order)
     flavor1 = models.CharField(u'flavor', max_length=32, choices=FLAVORS)
     flavor2 = models.CharField(u'flavor 2', max_length=32, choices=FLAVORS, blank=True)
     notes = models.TextField(blank=True)

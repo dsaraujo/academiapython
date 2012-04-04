@@ -181,3 +181,17 @@ Aula 14 (2012-03-29)
 * Inline in Admin
 * sphinx
 * Mais opções de Admin
+
+Aula 15 (2012-04-03)
+--------------------
+
+* Django ORM
+* Managers
+* select_related
+* Criterios
+* Views
+
+Other notes
+-----------
+
+* http://forum.xda-developers.com/archive/index.php/t-517308.html

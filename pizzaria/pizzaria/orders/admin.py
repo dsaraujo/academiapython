@@ -12,7 +12,7 @@ class ClientAdmin(admin.ModelAdmin):
 
 class PizzaAdmin(admin.TabularInline):
     model = Pizza
-    exclude = ('notes',) # Se quiser esconder no field
+    # exclude = ('notes',) # Se quiser esconder no field
 
 class OrderAdmin(admin.ModelAdmin):
     list_display = ('order', 'ready', 'on_the_run')

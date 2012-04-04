@@ -3,12 +3,9 @@ from django.conf.urls import patterns, include, url
 from django.contrib import admin
 admin.autodiscover()
 
+from pizzaria.orders.views import right_now
+
 urlpatterns = patterns('',
-    # Examples:
-    # url(r'^$', 'pizzaria.views.home', name='home'),
-    # url(r'^pizzaria/', include('pizzaria.foo.urls')),
-
-    url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
-
+    url(r'^ord/', include('pizzaria.orders.urls')),
     url(r'^admin/', include(admin.site.urls)),
 )
