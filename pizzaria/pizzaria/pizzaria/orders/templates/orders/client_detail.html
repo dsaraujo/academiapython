@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+    <head>
+        <title>Client</title>
+    </head>
+    <body>
+        <h3>Client Details</h3>
+        <ul>
+            <li><b>ID: </b>{{client.id}}</li>
+            <li><b>Name: </b>{{client.name}}</li>
+            <li><b>Phone: </b>{{client.phone}}
+            {% if client.ext %} <b>Ext: </b>{{client.ext}} {% endif %}
+            </li>
+            {% if client.email %}
+            <li><b>E-mail: </b><a href="mailto:{{client.email}}">{{client.email}}</a></li>
+            {% endif %}
+            <li><b>Address: </b><a href="{{client.google_map_url}}" target='_blank'>{{client.full_address}}</a></li>
+            <li><b>District: </b>{{client.district|default:"Unknown"}}</li>
+            <li><b>Notes: </b>{{client.notes|default:"None"}}</li>
+        </ul>            
+    <p><a href="{% url clients-page %}">Back</a></p>
+    

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+    <head>
+        <title>Clients</title>
+    </head>
+    <body>
+        <h3>Client List</h3>
+        <table style="width:100%">
+            <tr>
+                <th style="width:10%">ID</th>
+                <th style="width:40%">Name</th>
+                <th style="width:50%">Address</th>
+            </tr>
+            {% for client in list_clients %}
+                <tr style="background-color: {%cycle 'lightgray' 'white'%}">
+                    <td style="text-align:center">{{client.id}}</td>
+                    <td style="text-align:center"><a href="{{client.get_absolute_url}}">{{client.name}}</a></td>
+                    <td>{{client.full_address}}{% if client.district %}, {{client.district}} {% endif %}</td>
+                </tr>
+            {% endfor %}
+        </table>
+        {% with total=list_clients.count %}
+        <p><b>Total</b>: {{total}} Client{{total|pluralize}}</p>
+        {% endwith %}

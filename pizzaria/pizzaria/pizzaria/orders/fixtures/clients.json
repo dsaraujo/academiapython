@@ -1,0 +1,35 @@
+[
+  {
+    "pk": 4, 
+    "model": "orders.client", 
+    "fields": {
+      "phone": "0800 121 3133", 
+      "name": "Anand", 
+      "email": "",
+      "address": "ABC",
+      "number": "123"
+    }
+  }, 
+  {
+    "pk": 2, 
+    "model": "orders.client", 
+    "fields": {
+      "phone": "(11)23234454", 
+      "name": "Gervasio", 
+      "email": "ger@gmail.com",
+      "address": "ABC",
+      "number": "123"
+    }
+  }, 
+  {
+    "pk": 3, 
+    "model": "orders.client", 
+    "fields": {
+      "phone": "777-3211", 
+      "name": "Monica", 
+      "email": "",
+      "address": "ABC",
+      "number": "123"
+    }
+  }
+]

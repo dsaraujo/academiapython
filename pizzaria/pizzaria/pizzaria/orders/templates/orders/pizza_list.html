@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+    <head>
+        <title>Pizzas</title>
+    </head>
+    <body>
+        <h1>Pizzas To Do</h1>
+        <ol>
+            {% for pizza in list_pizzas %}
+                <li>{{pizza}}</li>
+            {% endfor %}
+        </ol>

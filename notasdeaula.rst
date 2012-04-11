@@ -191,7 +191,15 @@ Aula 15 (2012-04-03)
 * Criterios
 * Views
 
-Other notes
------------
+Aula 16 (2012-04-05)
+--------------------
 
-* http://forum.xda-developers.com/archive/index.php/t-517308.html
+* Views & Templates(Faltei)
+
+Aula 17 (2012-04-10)
+--------------------
+
+* Ainda Views & Templates
+* http://twitter.github.com/bootstrap/
+* Forms?
+
