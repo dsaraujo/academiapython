@@ -194,12 +194,32 @@ Aula 15 (2012-04-03)
 Aula 16 (2012-04-05)
 --------------------
 
-* Views & Templates(Faltei)
+* Views & Templates (Faltei)
 
 Aula 17 (2012-04-10)
 --------------------
 
 * Ainda Views & Templates
 * http://twitter.github.com/bootstrap/
-* Forms?
+* Arquivos Estáticos
 
+Aula 18 (2012-04-12)
+--------------------
+
+* Forms (Faltei)
+
+Modulo IV
+==========
+
+Aula 19 (2012-04-17)
+--------------------
+
+* Projeto Circulante
+* Modelagem do Projeto - UserStories
+* Work->Expression->Manifestation->Item
+* Começamos novo ambiente (circ.env)
+* Mudamos para postgres
+* Guardando senhas e admins (do settings.py) em outro lugar
+* https://developers.google.com/appengine/articles/django-nonrel
+* http://www.allbuttonspressed.com/projects/djangoappengine
+* 
